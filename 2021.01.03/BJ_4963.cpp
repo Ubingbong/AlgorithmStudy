@@ -22,8 +22,8 @@ void dfs(int m, int n)
 
     for (int i = 0; i < 8; i++)
     {
-        int nw = m + dw[i];
-        int nh = n + dh[i];
+        int nh = m + dh[i];
+        int nw = n + dw[i];
 
         if (map[nh][nw] == 1 && isInside(nh, nw) && visited[nh][nw] != 1)
             dfs(nh, nw);
