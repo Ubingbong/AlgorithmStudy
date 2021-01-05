@@ -18,6 +18,17 @@ int safeZoneCount[MAX];
 int dRow[4] = {0, 0, 1, -1};
 int dCol[4] = {1, -1, 0, 0};
 
+void Init()
+{
+    for (int row = 1; row <= N; row++)
+    {
+        for (int col = 1; col <= N; col++)
+        {
+            visited[row][col] = false;
+        }
+    }
+}
+
 bool isInside(int row, int col)
 {
     return (row > 0 && row <= N) && (col > 0 && col <= N);
@@ -70,6 +81,8 @@ int main()
     for (int i = 1; i < MAX; i++)
     {
         findSafeZone(i);
+        // 방문기록 초기화
+        Init();
     }
 
     int ans = 1;
