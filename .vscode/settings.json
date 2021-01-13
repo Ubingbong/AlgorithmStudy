@@ -15,6 +15,8 @@
         "xlocale": "cpp",
         "xlocnum": "cpp",
         "xutility": "cpp",
-        "queue": "cpp"
+        "queue": "cpp",
+        "vector": "cpp",
+        "tuple": "cpp"
     }
 }
