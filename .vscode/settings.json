@@ -17,6 +17,8 @@
         "xutility": "cpp",
         "queue": "cpp",
         "vector": "cpp",
-        "tuple": "cpp"
+        "tuple": "cpp",
+        "xstring": "cpp",
+        "string": "cpp"
     }
 }
