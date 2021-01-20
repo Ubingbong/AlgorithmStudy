@@ -19,6 +19,11 @@
         "vector": "cpp",
         "tuple": "cpp",
         "xstring": "cpp",
-        "string": "cpp"
+        "string": "cpp",
+        "list": "cpp",
+        "deque": "cpp",
+        "exception": "cpp",
+        "sstream": "cpp",
+        "type_traits": "cpp"
     }
 }
