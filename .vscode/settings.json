@@ -24,6 +24,7 @@
         "deque": "cpp",
         "exception": "cpp",
         "sstream": "cpp",
-        "type_traits": "cpp"
+        "type_traits": "cpp",
+        "cmath": "cpp"
     }
 }

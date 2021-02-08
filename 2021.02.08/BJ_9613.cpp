@@ -4,13 +4,10 @@ using namespace std;
 
 int getGCD(int A, int B)
 {
-    while (B > 0)
-    {
-        int tmp = B;
-        B = A % B;
-        A = tmp;
-    }
-    return A;
+    if (A % B == 0)
+        return B;
+
+    return getGCD(B, A % B);
 }
 
 int main()
@@ -24,8 +21,7 @@ int main()
             0,
         };
         int inputCount = 0;
-        int ans = 0;
-        char input;
+        long long ans = 0;
 
         cin >> inputCount;
 
