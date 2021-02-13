@@ -1,20 +1,23 @@
 #include <iostream>
 
-bool isPrime(int a)
+bool isPrime(int a, int num)
 {
-    if (a < 3)
+    if (a <= 2)
         return false;
 
-    for (int i = 2; i * i < a; i++)
-    {
+    for (int i = 2; i * i <= a; i++)
         if (a % i == 0)
             return false;
-    }
+
+    for (int i = 2; i * i <= (num - a); i++)
+        if ((num - a) % i == 0)
+            return false;
+
     return true;
 }
+
 int main()
 {
-
     while (true)
     {
         int num;
@@ -27,12 +30,10 @@ int main()
 
         for (int n = 3; n < num; n += 2)
         {
-            int m = num - n;
 
-            bool isPossible;
-            if (isPrime(n) && isPrime(m))
+            if (isPrime(n, num))
             {
-                printf("%d = %d + %d\n", num, n, m);
+                printf("%d = %d + %d\n", num, n, num - n);
                 isPossible = true;
                 break;
             }
