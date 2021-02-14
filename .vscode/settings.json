@@ -25,6 +25,8 @@
         "exception": "cpp",
         "sstream": "cpp",
         "type_traits": "cpp",
-        "cmath": "cpp"
+        "cmath": "cpp",
+        "iosfwd": "cpp",
+        "limits": "cpp"
     }
 }
